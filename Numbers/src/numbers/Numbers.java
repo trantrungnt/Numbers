@@ -30,6 +30,9 @@ public class Numbers {
             
             System.out.print("\nNhap so thu nhat b=");
             inputB = Integer.parseInt(oBufferReader.readLine());
+                                    
+            System.out.print("\nUSCLN cua " + inputA + " va " + inputB + " la: " + USCLN(inputA, inputB));
+            System.out.println();
         }
         catch(Exception e)
         {
@@ -37,4 +40,16 @@ public class Numbers {
         }
     }
     
+    //tim uoc so chung lon nhat cua 2 so a va b
+    public static int USCLN(int x, int y)
+    {
+        int r;
+            while(y!=0)
+            {
+                r = x % y;
+                x = y;
+                y = r;
+            }
+        return x;
+    }
 }
