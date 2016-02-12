@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package numberarray;
+package numbers;
 
 /**
  *
  * @author TrungNT
  */
-public class NumberArray {
+public class Numbers {
 
     /**
      * @param args the command line arguments
