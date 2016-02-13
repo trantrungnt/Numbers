@@ -33,6 +33,12 @@ public class Numbers {
                                     
             System.out.print("\nUSCLN cua " + inputA + " va " + inputB + " la: " + USCLN(inputA, inputB));
             System.out.println();
+            
+            //tim Boi so chung nho nhat cua a va b
+            int bscnn;
+            bscnn = (inputA * inputB)/USCLN(inputA, inputB);
+            System.out.print("\nBSCNN cua " + inputA + " va " + inputB + " la: " + bscnn);
+            System.out.println();
         }
         catch(Exception e)
         {
