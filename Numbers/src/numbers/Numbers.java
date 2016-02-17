@@ -98,4 +98,13 @@ public class Numbers {
         
         return true;
     }
+    
+    //Kiem tra so Finbonacii
+    public static int Finbonacii(int x)
+    {
+        if(x<3)
+            return 1;
+        
+        return Finbonacii(x-1) + Finbonacii(x-2);
+    }
 }
