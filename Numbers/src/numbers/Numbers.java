@@ -58,4 +58,13 @@ public class Numbers {
             }
         return x;
     }
+    
+    //Tinh giai thua cua 1 so
+    public static int calculateGiaiThua(int x)
+    {
+        if(x==0)        
+            return 1;
+        
+        return x*calculateGiaiThua(x-1);
+    }
 }
