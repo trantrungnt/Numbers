@@ -54,7 +54,10 @@ public class Numbers {
                 System.out.print("\nSo " + inputB + " la so Nguyen to");
             else
                 System.out.print("\nSo " + inputB + " khong phai so Nguyen to");
+            System.out.println();
             
+            //HIen thi so thuoc day Finbonacci 
+            System.out.print(Finbonacii(inputA) + " " + Finbonacii(inputB));            
             System.out.println();
         }
         catch(Exception e)
