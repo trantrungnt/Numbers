@@ -38,6 +38,10 @@ public class Numbers {
             int bscnn;
             bscnn = (inputA * inputB)/USCLN(inputA, inputB);
             System.out.print("\nBSCNN cua " + inputA + " va " + inputB + " la: " + bscnn);
+            
+            //tinh giai thua cua cac so vua nhap tu ban phim
+            System.out.print("\nGiai thua cua so " + inputA + " la: " + calculateGiaiThua(inputA));
+            System.out.print("\nGiai thua cua so " + inputB + " la: " + calculateGiaiThua(inputB));
             System.out.println();
         }
         catch(Exception e)
