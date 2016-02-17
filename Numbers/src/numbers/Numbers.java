@@ -44,6 +44,17 @@ public class Numbers {
             System.out.print("\nGiai thua cua so " + inputA + " la: " + calculateGiaiThua(inputA));
             System.out.print("\nGiai thua cua so " + inputB + " la: " + calculateGiaiThua(inputB));
             
+            //Kiem tra so Nguyen to
+            if(isNguyenTo(inputA)==true)
+                System.out.print("\nSo " + inputA + " la so Nguyen to");
+            else
+                System.out.print("\nSo " + inputA + " khong phai so Nguyen to");
+                
+            if(isNguyenTo(inputB)==true)
+                System.out.print("\nSo " + inputB + " la so Nguyen to");
+            else
+                System.out.print("\nSo " + inputB + " khong phai so Nguyen to");
+            
             System.out.println();
         }
         catch(Exception e)
@@ -81,7 +92,7 @@ public class Numbers {
             return false;
         
         //duyet cac so nguyen chia het va khong con so du khong phai la so nguyen to
-        for(int i=2; i<=Math.sqrt(x); i++)
+        for(int i=2; i<=Math.sqrt((float)x); i++)
             if(x%i==0)
                         return false;
         
