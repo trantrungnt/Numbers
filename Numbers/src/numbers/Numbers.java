@@ -7,6 +7,7 @@ package numbers;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.math.*;
 
 /**
  *
@@ -42,6 +43,7 @@ public class Numbers {
             //tinh giai thua cua cac so vua nhap tu ban phim
             System.out.print("\nGiai thua cua so " + inputA + " la: " + calculateGiaiThua(inputA));
             System.out.print("\nGiai thua cua so " + inputB + " la: " + calculateGiaiThua(inputB));
+            
             System.out.println();
         }
         catch(Exception e)
@@ -70,5 +72,19 @@ public class Numbers {
             return 1;
         
         return x*calculateGiaiThua(x-1);
+    }
+    
+    //Kiem tra so Nguyen to
+    public static boolean isNguyenTo(int x)
+    {
+        if(x<2) //cac so nguyen nho hon 2 khong phai la so nguyen to
+            return false;
+        
+        //duyet cac so nguyen chia het va khong con so du khong phai la so nguyen to
+        for(int i=2; i<=Math.sqrt(x); i++)
+            if(x%i==0)
+                        return false;
+        
+        return true;
     }
 }
